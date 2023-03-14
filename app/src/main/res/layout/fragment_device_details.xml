@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".device_details">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Device Details"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:background="@color/faint_green"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bright_green"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/img_car"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_directions_car_black_24dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_toEndOf="@id/img_car"
+                android:padding="12dp"
+                android:orientation="vertical"
+                android:background="@color/bright_green">
+                <TextView
+                    android:id="@+id/Vehicle_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Vehicle NO"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:background="@android:color/white">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/firstrow">
+                <TextView
+                    android:id="@+id/device_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="18dp"
+                    android:text="Device ID:"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/Driver_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="18dp"
+                    android:text="Driver Name:"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/Mobile_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="18dp"
+                    android:text="Mobile NO:"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Device_Model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="18dp"
+                    android:text="Device Model:"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/Vehicle_specification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="18dp"
+                    android:text="Vehicle specification:"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    />
+            </TableRow>
+        </TableLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/bright_green">
+            <ImageView
+                android:id="@+id/img_battery"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/bright_green"
+                android:src="@drawable/ic_battery_charging_full_black_24dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_toEndOf="@id/img_battery"
+                android:padding="12dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/batterydetails_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/bright_green"
+                    android:layout_span="2"
+                    android:text="BATTERY DETAILS"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

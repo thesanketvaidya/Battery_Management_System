@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/sendcommand"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:text="SEND COMMAND"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/bright_green"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/bmsid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bright_green"
+        android:text=""
+        tools:text="12345"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="35dp">
+        <Button
+            android:id="@+id/poweroffbatterybtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mint_btn"
+            android:text="Power-off Battery"
+            android:textColor="@color/dark_gray"
+            android:layout_marginTop="40dp"
+            />
+        <Button
+            android:id="@+id/analyzebatterybtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mint_btn"
+            android:text="Analyze Battery"
+            android:textColor="@color/dark_gray"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:id="@+id/resetsettingbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mint_btn"
+            android:text="Reset Setting"
+            android:textColor="@color/dark_gray"
+            android:layout_marginTop="20dp"
+            />
+        <Button
+            android:id="@+id/rebootbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mint_btn"
+            android:text="Reboot"
+            android:textColor="@color/dark_gray"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

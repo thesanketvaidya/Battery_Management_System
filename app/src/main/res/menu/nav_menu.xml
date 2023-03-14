@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search Device" />
+        <item
+            android:id="@+id/nav_mis"
+            android:icon="@drawable/ic_mis"
+            android:title="MIS Report" />
+        <item
+            android:id="@+id/nav_geo"
+            android:icon="@drawable/ic_geo"
+            android:title="Set Geo-fence"/>
+
+    </group>
+
+    <item android:title="Map Type">
+        <menu>
+            <item
+                android:id="@+id/nav_reg_map"
+                android:icon="@drawable/ic_map_regular"
+                android:title="Regular Map" />
+
+            <item
+                android:id="@+id/nav_sat_map"
+                android:icon="@drawable/ic_map_satelite"
+                android:title="Satellite Map" />
+        </menu>
+    </item>
+    <item
+        android:checkable="false"
+        android:title=" "
+        android:enabled="false"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logoff"
+        android:title="Log Out" />
+
+</menu>

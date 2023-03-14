@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="CREATE ACCOUNT"
+                    android:textColor="@color/bright_green"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/input_field_design"
+                    android:hint="Email"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/emailId"/>
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/input_field_design"
+                    android:hint="Full Name"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/fullName"/>
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/input_field_design"
+                    android:hint="Password"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/input_field_design"
+                    android:hint="Repeat Password"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/password_confirm"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/input_field_design"
+                    android:hint="Enter ID"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/verifyId"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/input_field_design"
+                    android:hint="Mobile No."
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:id="@+id/mobileNo"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/green_btn"
+                    android:text="Register"
+                    android:textColor="@color/dark_gray"
+                    android:id="@+id/reg_btn"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

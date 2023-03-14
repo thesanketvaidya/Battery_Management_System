@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vehciles_for_geofence"
+    android:background="@color/light_gray">
+
+    <TextView
+        android:id="@+id/bmsid"
+        android:layout_width="match_parent"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+
+        android:text="TextView" />
+
+</LinearLayout>

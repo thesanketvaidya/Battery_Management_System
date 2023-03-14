@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/moreoptions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="MORE OPTIONS"
+        android:textAlignment="center"
+        android:textColor="@color/bright_green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/bmsid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bright_green"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:text="1234567"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="35dp">
+        <Button
+            android:id="@+id/sendcommandbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mint_btn"
+            android:text="Send Command"
+            android:textColor="@color/dark_gray" />
+
+        <Button
+            android:id="@+id/geofencebtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mint_btn"
+            android:text="Geofence"
+            android:textColor="@color/dark_gray"
+            android:layout_marginVertical="20dp"/>
+
+        <Button
+            android:id="@+id/batterydetailbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mint_btn"
+            android:text="Battery Details"
+            android:textColor="@color/dark_gray" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

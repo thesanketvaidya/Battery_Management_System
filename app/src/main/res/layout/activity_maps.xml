@@ -1,0 +1,108 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/constraint_layout">
+
+    <include
+        android:id="@+id/mytoolbar"
+        layout="@layout/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/gray_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/mytoolbar"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap on the map to select the center and select the radius for the geo-fence area."
+        android:textColor="@color/bright_green"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/gray_bar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/foseek"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/light_gray"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginTop="5dp"
+        >
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="20dp"
+            android:max="400"
+            android:progressTint="@color/bright_green"
+            android:thumbTint="@color/bright_green"
+            />
+        <TextView
+            android:id="@+id/radiusTextview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:gravity="center"
+            android:text=" 0 KM"
+            android:textColor="@color/bright_green"
+            tools:ignore="Deprecated" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        tools:context=".MapsActivity"
+        app:layout_constraintTop_toBottomOf="@+id/foseek"
+        app:layout_constraintBottom_toTopOf="@+id/butt"
+        />
+
+    <LinearLayout
+        android:id="@+id/butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/constraint_layout"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/active_fences"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/mint_btn"
+            android:padding="15dp"
+            android:text="Active Fences"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/dark_gray"
+            />
+        <Button
+            android:id="@+id/button"
+            android:padding="15dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/mint_btn"
+            android:text="Next"
+            android:textColor="@color/dark_gray"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
