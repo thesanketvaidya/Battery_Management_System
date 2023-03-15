@@ -23,7 +23,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDsO5uCPq8yOKsvhsYiZmeDUz_tAkE0hsY" />
+            android:value="" />
 
         <activity android:name=".ForgotPassword" />
         <activity android:name=".Registration" />
